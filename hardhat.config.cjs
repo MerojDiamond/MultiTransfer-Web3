@@ -1,11 +1,16 @@
 require("@nomicfoundation/hardhat-toolbox");
 require('dotenv').config();
+const {vars} = require("hardhat/config");
+const ETHERSCAN_API_KEY = vars.get("ETHERSCAN_API_KEY");
 const {API_URL, PRIVATE_KEY} = process.env;
 module.exports = {
-    etherscan: {
-        apiKey: "ABCDE12345ABCDE12345ABCDE123456789",
+    sourcify: {
+        enabled: true
     },
-    solidity: "0.8.19",
+    etherscan: {
+        apiKey: ETHERSCAN_API_KEY,
+    },
+    solidity: "0.8.20",
     defaultNetwork: "sepolia",
     networks: {
         hardhat: {},

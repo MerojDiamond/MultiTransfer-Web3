@@ -11,18 +11,22 @@
   },
   "dependencies": {
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@pinia/nuxt": "^0.5.1",
     "@quasar/extras": "^1.16.9",
     "axios": "^1.6.7",
     "dotenv": "^16.4.4",
     "ethers": "^6.11.0",
     "hardhat": "^2.19.5",
     "nuxt": "^3.10.1",
+    "pinia": "^2.1.7",
     "quasar": "^2.14.3",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.11.4",
-    "nuxt-quasar-ui": "^2.0.7"
+    "@openzeppelin/contracts": "^5.0.2",
+    "nuxt-quasar-ui": "^2.0.7",
+    "scss": "^0.2.4"
   }
 }
